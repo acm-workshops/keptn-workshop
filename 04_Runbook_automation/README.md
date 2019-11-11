@@ -65,7 +65,7 @@ A ServiceNow *Update Set* is provided to run this tutorial. To install the *Upda
 
 3. Click on **Import Update Set from XML**
 
-4. *Import* and *Upload* the file from your file system that you find in your `servicenow-service/usecase` folder: `keptn_demo_remediation_updateset.xml`
+4. *[Import](https://raw.githubusercontent.com/keptn-contrib/servicenow-service/release-0.1.4/usecase/keptn_demo_remediation_updateset.xml)* and *Upload* the file from your file system that you find in your `servicenow-service/usecase` folder: `keptn_demo_remediation_updateset.xml`
 
 5. Open the *Update Set*
 
@@ -94,13 +94,7 @@ A ServiceNow *Update Set* is provided to run this tutorial. To install the *Upda
 
    - The workflow editor is opened in a new window/tab
 
-   - Look for the workflow
-
-      
-
-     keptn_demo_remediation
-
-      
+   - Look for the workflow keptn_demo_remediation
 
      (it might as well be on the second or third page)
 
@@ -143,10 +137,8 @@ Before you adjust this setting, make sure to have some traffic on the service in
 1. Navigate to the *servicenow-service/usecase* folder:
 
    ```bash
-   cd ~/servicenow-service/usecase
+   cd ~/servicenow-usecase
    ```
-
-   
 
 2. Run the script:
 
@@ -208,8 +200,6 @@ Now, all pieces are in place to run the use case of a production incident. There
    ```undefined
    echo $DT_TENANT $DT_API_TOKEN
    ```
-
-   
 
    If the environment variables are not set, you can easily set them by [following the instructions on how to extract information from the Dynatrace secret](https://keptn.sh/docs/0.5.0/usecases/runbook-automation-and-self-healing/#dynatrace-secret).
 
