@@ -1,4 +1,4 @@
-## **Welcome to the Autonomous Cloud  Workshop**
+## Welcome to the Autonomous Cloud  Workshop
 
 Let's release better software faster and put our IT on autopilot. Let's build a Pipeline from scratch with Keptn and Kubernetes.
 
@@ -8,7 +8,7 @@ https://xxxxx.dynatrace-managed.com/
 User: acmguru[1-8]
 Password: secret
 
-##### Sample to copy for your Notepad (Sergio)
+##### Sample to copy for your Notepad
 
 ```
 Tenant: xxxxxx.dynatrace-managed.com/e/tenant-id
@@ -16,16 +16,11 @@ API-Token: YYYYYYY
 PaaS-Token: XXXXXXXX
 ```
 
-
-
 ##### **Login to the Bastion Host:** 
-
 User: acmguru[1-8]
 Password: secret
 Native shell: ssh  acmguru[n]@bastion.ip
 Webshell: https://bastion.ip/shell/
-
-
 
 More Info about Keptn: https://keptn.sh/
 
@@ -49,8 +44,6 @@ https://github.com/keptn-workshops/workshop-instructions
     ./defineDynatraceCredentials.sh
     ./deployDynatraceOnGKE.sh
     ```
-
-    
 
 ----
 *What happened?*
@@ -77,7 +70,6 @@ We also created the following integrations/resources
   https://www.dynatrace.com/support/help/setup-and-configuration/integrations/third-party-integrations/test-automation-frameworks/dynatrace-and-load-testing-tools-integration/
 
   
-
   Now we generate a bit of traffic just to expose the cart services in all stages and see the importance on FeedBack achieved via RequestAttributes
 
   **Generate Traffic** 
@@ -87,8 +79,6 @@ We also created the following integrations/resources
   ./generate_traffic.sh > /dev/null 2>&1 &
   ```
 
-
-
 **Deployment of the Carts**
 
 ```
@@ -96,38 +86,36 @@ cd ~/keptn-onboarding
 ```
 
 ```
-1_create-project.sh
-2_onboarding-carts.sh
-3_add_tests_to_cart.sh
-4_onboard_database.sh
-5_deploy_carts_database.sh
-6_deploy_carts_service.sh
+./1_create-project.sh
+./2_onboarding-carts.sh
+./3_add_tests_to_cart.sh
+./4_onboard_database.sh
+./5_deploy_carts_database.sh
+./6_deploy_carts_service.sh
 ```
-
-
 
 **Show Pipeline Overview**
 
 ```
-7_quality_gates_addSLIandSLO.sh
+./7_quality_gates_addSLIandSLO.sh
 ```
 
-**Deploy Slow Service**
+## Deploy Slow Service
 
 ```
-8_deploy_carts_v2_slow.sh
+./8_deploy_carts_v2_slow.sh
 ```
 
 ```
-9_deploy_carts_v3_ok.sh
+./9_deploy_carts_v3_ok.sh
 ```
 
 
-
-**Davis Interactions**
+### 👱‍♀️ Davis Interactions
 https://assistant.dynatrace.com/
 
-**Keptn Integrations (Services)**
 
+### Keptn Integrations (Services)
+https://github.com/keptn-contrib/
 https://github.com/keptn-contrib/neoload-service
 https://github.com/keptn-contrib/ufo-service
