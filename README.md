@@ -7,7 +7,7 @@ Let's release better software faster and put our IT on autopilot with Keptn and 
 In this workshop, you will get hands-on experience with Dynatrace and the open source framework [Keptn](https://keptn.sh) and see how it can help you to manage your cloud-native applications on Kubernetes.
 In this workshop everything is already set up for the attendees.
 
-<img src="images/acm-dashboard.jpg" width="100%"/>
+<img src="images/acm-dashboard.png" width="100%"/>
 
 # The Workshop in a Nutshell
 ## 1. 🤖 Monitoring as a Service 
