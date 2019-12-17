@@ -58,5 +58,4 @@ To create a project which is the logical entity that holds services, please foll
 Now, your configuration repository contains all the information needed to deploy your application and even supports blue/green deployments for two of the environments (staging and production).
 
 ---
-
-:arrow_forward: [Next Lab: Deploying the carts service](../02_Deploying_the_carts_service)
+[Previous Step: Install Keptn and deploy Dynatrace](../00_Install_keptn_deploy_dynatrace) :arrow_backward: :arrow_forward: [ Next Lab: Deploying the carts service](../02_Deploying_the_carts_service)

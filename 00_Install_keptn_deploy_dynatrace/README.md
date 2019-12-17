@@ -2,13 +2,12 @@
 # Installing Keptn and configuring Dynatrace
 
 ## 1. Accounts 🎫
- 
+In this workshop, we are providing you a Dynatrace Account as well as login to a bastion host connected to your GKE Cluster. The tenant and GCP Account is if you want to do the workshop with a free Dynatrace tenant and a free GKE account.  
+
 * **Dynatrace** - We will use Dynatrace to monitor our cluster as well as all our sample application. Therefore, create an account for a [free trial Dynatrace SaaS tenant](https://www.dynatrace.com/trial). See details in the [Keptn docs](https://keptn.sh/docs/0.5.0/reference/monitoring/dynatrace/).
 * **(recommended:) GCP account** - A GCP account is suggested to utilize the Google Cloud Shell. It is recommended to sign up for personal free trial to have full admin rights and to not cause any issues with your enterprise account. Google Cloud Shell is free to use with an GCP account, [more information here](https://cloud.google.com/free/docs/gcp-free-tier). Use this link to sign up for a free trial: https://cloud.google.com/free/
 
-
 ## 2. Tools 🛠️
-In this workshop, we are providing you a Dynatrace Account as well as login to a bastion host connected to your GKE Cluster. 
 
 # Install Keptn ⚙️
 
@@ -141,4 +140,6 @@ In the default installation of Keptn, the bridge is only accessible via `kubectl
 
 1. It will give you the URL of your Bridge at the end of the script. Open a browser and verify the bridge is running.
 
-    <img src="images/bridge-empty.png" width="500"/>
+    <img src="../images/bridge-empty.png" width="500"/>
+
+    :arrow_forward: [Next Lab: Onboarding the carts service](../01_Onboarding_carts_service)

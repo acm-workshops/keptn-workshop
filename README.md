@@ -23,7 +23,15 @@ We add an SLO and SLI (Service Level Indicator and Service Level Objective) and 
 A problem is in production detected and it will be automatically repaired via Runbook automation with a Service-Now workflow. 
 
 # Hands-on Labs 👩‍💻👨‍🔬
-After installing Keptn, we are now ready to explore to execute the following hands-on labs. They are based on each other, why it is important to complete them according to this order:
+
+## [Hands-On Interactive](./resources)
+The Hands-On Workshop was delivered in an interactive way collaborating with [Etherpad](https://etherpad.org/) on the Bastion Host. A copy of the cheatsheet can be found here [resources](./resources) In here you'll also find the shell scripts that were executed for deploying Dynatrace, configuring Keptn and going in a fast way through the below Steps (1-5) which allows us to have more time for understanding what is happening under the hood changing to the presentation being displayed.
+
+
+After installing Keptn, we are now ready to explore to execute the following hands-on labs. 
+
+## Hands-On for follow-up 
+The below steps are based on each other, so it is important to complete them according to this order:
 
 1. Install Keptn and deploy dynatrace: [Lab](./00_Install_keptn_deploy_dynatrace)
 2. Onboarding the carts service: [Lab](./01_Onboarding_carts_service)
@@ -41,4 +49,4 @@ Further information about Keptn you can find on the [keptn.sh](keptn.sh) website
 
 Join our Slack channel!
 
-The easiest way to get in contact with Keptn users and creaters is to [join our Slack channel](https://join.slack.com/t/keptn/shared_invite/enQtNTUxMTQ1MzgzMzUxLTcxMzE0OWU1YzU5YjY3NjFhYTJlZTNjOTZjY2EwYzQyYWRkZThhY2I3ZDMzN2MzOThkZjIzOTdhOGViMDNiMzI) - we are happy to meet you there!
+The easiest way to get in contact with Keptn users and creaters is to [join our Slack channel](https://join.slack.com/t/keptn/shared_invite/enQtNTUxMTQ1MzgzMzUxLTcxMzE0OWU1YzU5YjY3NjFhYTJlZTNjOTZjY2EwYzQyYWRkZThhY2I3ZDMzN2MzOThkZjIzOTdhOGViMDNiMzI) - we are happy 😀 to meet you there!
