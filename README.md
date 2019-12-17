@@ -17,7 +17,6 @@ There is no need to install any software on your local machine, instead we will 
 In this workshop, we are providing you with a Dynatrace Account as well as login to a bastion host connected to your GKE Cluster. 
 
 
-
 # Install Keptn ⚙️
 
 ## 1) Install Keptn
