@@ -1,13 +1,18 @@
 # 💻 ☁ Autonomous Cloud Workshop Instructions
 
-Let's release better software faster and put our IT on autopilot with Keptn and Dynatrace. Let's build a Software delivery pipeline from scratch with quality gates and self-healing!
+> Let's **release better software faster** and put your IT on Autopilot with Keptn and Dynatrace. 
+> Let's build a Software delivery pipeline from scratch with quality gates and self-healing!
 
 
 # Overview
 In this workshop, you will get hands-on experience with Dynatrace and the open source framework [Keptn](https://keptn.sh) and see how it can help you to manage your cloud-native applications on Kubernetes.
 In this workshop everything is already set up for the attendees.
 
+> This is the preconfigured Dashboard of each attendee where he can get an overview of the three stages (dev, staging, prod) of the  service being delivered and tested with Keptn, its Quality Gates (Lighthouse) and Kubernetes. 
 <img src="images/acm-dashboard.png" width="100%"/>
+
+## The Hybrid-Cloud Workshop Setup
+<img src="images/workshop-setup.png" width="100%"/>
 
 # The Workshop in a Nutshell
 ## 1. 🤖 Monitoring as a Service 
@@ -24,11 +29,8 @@ A problem is in production detected and it will be automatically repaired via Ru
 
 # Hands-on Labs 👩‍💻👨‍🔬
 
-## [Hands-On Interactive](./resources)
+## [Hands-On during the workshop (interactive)](./resources)
 The Hands-On Workshop was delivered in an interactive way collaborating with [Etherpad](https://etherpad.org/) on the Bastion Host. A copy of the cheatsheet can be found here [resources](./resources) In here you'll also find the shell scripts that were executed for deploying Dynatrace, configuring Keptn and going in a fast way through the below Steps (1-5) which allows us to have more time for understanding what is happening under the hood changing to the presentation being displayed.
-
-
-After installing Keptn, we are now ready to explore to execute the following hands-on labs. 
 
 ## Hands-On for follow-up 
 The below steps are based on each other, so it is important to complete them according to this order:
