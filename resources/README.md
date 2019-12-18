@@ -38,11 +38,11 @@ PaaS-Token: XXXXXXXX
 
 More Info about Keptn: https://keptn.sh/
 
-##### Cool News about Keptn:
+##### 📰 News about Keptn:
 
 [Dynatrace gets Hands on with NoOps Autonomous Cloud [Forbes]](https://www.forbes.com/sites/adrianbridgwater/2019/12/11/dynatrace-gets-hands-on-with-hands-off-noops-autonomous-cloud/#71f2f2d64a4d) 
-[Autonomous Cloud with Dynatrace and Keptn [Information Age]](https://www.information-age.com/autonomous-cloud-dynatrace-keptn-123486469/)
 
+[Autonomous Cloud with Dynatrace and Keptn [Information Age]](https://www.information-age.com/autonomous-cloud-dynatrace-keptn-123486469/)
 
 **Steps**
 1.- Login to your Dynatrace Tenant
