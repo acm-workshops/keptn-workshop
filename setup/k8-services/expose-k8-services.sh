@@ -1,9 +1,9 @@
 #!/bin/bash -x
 
-printf "\nExpose Dashboard\n"
+printf "\nSkip Login in K8 Dashboard \n"
 kubectl apply -f skip-login-in-k8-dashboard.yaml
 
-printf "\nExpose Kubernetes API and Dashboard\n"
+printf "\nExpose Kubernetes API, Grafana & Dashboard \n"
 export PUBLIC_IP=$(curl -s ifconfig.me) 
 PUBLIC_IP_AS_DOM=$(echo $PUBLIC_IP | sed 's~\.~-~g')
 export DOMAIN="${PUBLIC_IP_AS_DOM}.nip.io"
