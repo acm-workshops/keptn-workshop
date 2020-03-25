@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 printf "\nSkip Login in K8 Dashboard \n"
-kubectl apply -f skip-login-in-k8-dashboard.yaml
+kubectl -n kube-system patch deployments kubernetes-dashboard --patch "$(cat skip-login-in-k8-dashboard-patch.yaml)"
 
 printf "\nExpose Kubernetes API, Grafana & Dashboard \n"
 export PUBLIC_IP=$(curl -s ifconfig.me) 
