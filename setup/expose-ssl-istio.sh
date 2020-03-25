@@ -14,7 +14,7 @@ export PUBLIC_IP=$(curl -s ifconfig.me)
 PUBLIC_IP_AS_DOM=$(echo $PUBLIC_IP | sed 's~\.~-~g')
 export DOMAIN="${PUBLIC_IP_AS_DOM}.nip.io"
 
-cat ingress.yaml | \
+cat ingress-ssl-istio.yaml | \
   sed 's~domain.placeholder~'"$DOMAIN"'~' > ./gen/ingress-ssl-istio.yaml
 
 # Deploy ingress with rules to domains and ingress-gateway. Create secret and certificate
