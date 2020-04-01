@@ -36,7 +36,7 @@ replaceJson(){
 
 connectClusterWithDynatrace(){
     DESTINATION="https://$DT_TENANT/api/config/v1/kubernetes/credentials/?api-token=$DT_API_TOKEN"
-    curl -v -X POST -H 'Content-Type: application/json' -H 'cache-control: no-cache' -d @$FILE_OUT $DESTINATION
+    curl -X POST -H 'Content-Type: application/json' -H 'cache-control: no-cache' -d @$FILE_OUT $DESTINATION
 }
 
 configureAccountAndGetCredentials

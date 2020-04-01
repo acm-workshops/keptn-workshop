@@ -1,0 +1,6 @@
+*/gen/*
+# We dont want to add files nor folders with a -
+*mine*
+# Dont add test files
+*test*
+
