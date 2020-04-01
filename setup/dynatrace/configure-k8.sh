@@ -31,8 +31,7 @@ replaceJson(){
     jq --arg title "$title" '.label = $title' | \
     jq --arg endpointUrl "$endpointUrl" '.endpointUrl = $endpointUrl' | \
     jq --arg authToken "$authToken" '.authToken = $authToken')
-    echo $NJSON 
-    #echo $NJSON > $FILE_OUT
+    echo $NJSON > $FILE_OUT
 }
 
 connectClusterWithDynatrace(){
