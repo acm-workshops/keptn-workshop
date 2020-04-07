@@ -1,10 +1,18 @@
 #!/bin/bash
-echo "Usage: ./generate_traffic.sh "
+echo "Usage: ./generate_traffic.sh [domain]"
 echo "Press [CTRL+C] to stop.."
 
+if [ $# -eq 0 ]; then
+    KEPTN_DNS="svc.cluster.local"
+    stages=( carts.sockshop-dev carts-primary.sockshop-staging carts-primary.sockshop-production )
+    echo "No domain provided, using the internal DNS of cluster"
+else 
+    KEPTN_DNS=$1
+    echo "Using this domain: $KEPTN_DNS"
+    stages=( carts.sockshop-dev carts.sockshop-staging carts.sockshop-production )
+fi
+
 # Declare variables
-KEPTN_DNS=$(kubectl get cm -n keptn keptn-domain -ojsonpath={.data.app_domain})
-stages=( sockshop-dev sockshop-staging sockshop-production )
 contentType="Content-Type: application/json"
 dtHeaderGet="x-dynatrace-test: LSN=generate_traffic.sh;LTN=Traffic generation;TSN=Get Items in cart;"
 dtHeaderAdd="x-dynatrace-test: LSN=generate_traffic.sh;LTN=Traffic generation;TSN=Get Items in cart;"
@@ -22,7 +30,7 @@ get_add_delete_items_all_stages(){
     # Endless loop
     for stage in "${stages[@]}"
     do
-      url_cart="http://carts.$stage.$KEPTN_DNS/carts/$cartNr"
+      url_cart="http://$stage.$KEPTN_DNS/carts/$cartNr"
       url_items=$url_cart"/items"
       # we get items continuesly
       add_item
@@ -50,7 +58,7 @@ check_items_all_stages(){
   # Endless loop
   for stage in "${stages[@]}"
     do
-    url_cart="http://carts.$stage.$KEPTN_DNS/carts/$cartNr"
+    url_cart="http://$stage.$KEPTN_DNS/carts/$cartNr"
     url_items=$url_cart"/items"
     echo -e "\n getting url $url_items"
     get_item
