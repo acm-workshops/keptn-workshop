@@ -5,6 +5,7 @@
     "endpointUrl": "endpointurl.placeholder",
     "authToken": "authToken.placeholder",
     "eventsIntegrationEnabled": true,
+    "workloadIntegrationEnabled": true,
     "eventsFieldSelectors": [
         {
             "label": "Node events",
