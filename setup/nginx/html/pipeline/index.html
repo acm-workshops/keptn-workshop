@@ -113,12 +113,16 @@
         var e = document.getElementById(elementId);
         e.setAttribute('src', src);
     }
-    var hostname = location.hostname;
-    //var hostname = "3-10-178-206.nip.io";
 
-    addSrc("iframe1", "https://carts.sockshop-dev." + hostname)
-    addSrc("iframe2", "https://carts.sockshop-staging." + hostname)
-    addSrc("iframe3", "https://carts.sockshop-production." + hostname)
+    var hostname = location.hostname;
+    hostname = "18-132-59-76.nip.io";
+    var protocolframe = location.protocol;
+    // since we are in an Iframe the protocol also includes the hostdomain and path
+    var protocol = protocolframe.split(":")[0];
+
+    addSrc("iframe1", protocol + "://carts.sockshop-dev." + hostname)
+    addSrc("iframe2", protocol + "://carts.sockshop-staging." + hostname)
+    addSrc("iframe3", protocol + "://carts.sockshop-production." + hostname)
 
     window.setInterval(function () {
         document.getElementById('iframe1').src = document.getElementById('iframe1').src;

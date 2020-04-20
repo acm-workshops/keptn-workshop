@@ -930,12 +930,12 @@
         function addLink(elementId, link) {
           var e = document.getElementById(elementId);
           //e.innerHTML = link;
-          e.setAttribute('href', 'https://' + link);
+          e.setAttribute('href', protocol + '//' + link);
           e.setAttribute('target', "_blank");
         }
 
         var hostname = location.hostname;
-        //var hostname = "3-10-178-206.nip.io";
+        var protocol = location.protocol;
 
         replaceInE("hostname", hostname);
         addLink("pipeline", hostname + "/pipeline");
